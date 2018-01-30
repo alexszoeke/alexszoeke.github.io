@@ -1,0 +1,252 @@
+/*Includes the background and body fonts*/
+body {
+    background-image: url("../images/greyzz.png");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/*About me and connect with me box*/
+.container {
+    width: 960px;
+    margin: 80px auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+/*Includes name and nav links*/
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-image: url("../images/black_paper.png");
+    border-bottom: 2px solid #fdd9d2;
+}
+
+header > h1{
+    float:left;
+    display:inline-block;
+    padding:32px;
+  }
+
+/*Nav links only*/
+nav {
+    float: right;
+    width: 400px;
+    padding: 15px;
+    margin: 10px;
+    margin-right: 200px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+ul {
+    color: white;
+}
+
+li{
+    display:inline-block;
+  }
+
+  /*Links in the nav bar*/
+a {
+    text-decoration: underline;
+    color: #fdd9d2;
+}
+
+/*Hover Change*/
+a:hover {
+    color: white;
+}
+
+
+/*H1 Tag- Name Only*/
+h1 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 25px 5px; 
+    width: 300px;
+    margin-left: 277px;
+    font-weight: bold;
+    background-color: #fdd9d2;
+    color: black;
+}
+
+h1 > a {
+    color: black;
+    text-decoration: none;
+}
+
+/*H2 Tag - "About Me/Portfolio/Contant Me" & "Connect with Me"*/
+h2 {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    border-bottom: 2px solid #fdd9d2;
+    color: #404040;
+    font-weight: bold;
+}
+
+/*Portfolio Link Labels*/
+h3 {
+    font-size: 18px;
+    vertical-align: middle;
+    background-color: #fdd9d2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 145px;
+    padding: 10px 5px;
+    color: black;
+    font-weight: bold;
+}
+
+/*Connect with Me box*/
+#connect {
+    float: right;
+    background-color: white;
+    width: 270px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+/*Icon photos (e.g. Github, LinkedIn, StackOverflow)*/
+.icon {
+    margin: 10px;
+}
+
+/*About me section only*/
+#about-me {
+    float: left;
+    width: 650px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    line-height: 1.6;
+}
+
+/*Graduation Headshot*/
+#gradphoto {
+    float: left;
+    margin: 10px;
+}
+
+/*Punny Joke*/
+#quote {
+    color: #404040;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Contact me section only*/
+#contact-me {
+    float: left;
+    width: 650px;
+    background-color: white;
+    padding: 5px;
+    margin: px;
+    line-height: 1.6;
+}
+
+/*Form Properties*/
+.form {
+    width: 600px;
+    border: solid #dac2a8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/*Labels*/
+label {
+    color: #404040;
+    font-size: 16px;
+}
+
+/*Message Box*/
+#message {
+    height: 150px;
+}
+
+/*Submit Button*/
+#button {
+    background-color: #404040;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*Portfolio section only*/
+#portfolio {
+    float: left;
+    width: 650px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    line-height: 1.6;
+}
+
+/*Boxes Listed Below*/
+.boxes {
+    border: solid black;
+    width: 250px;
+    height: 200px;
+    margin: 30px;
+    text-align: center;
+}
+
+.box-1,
+.box-3 {
+    float: left;
+}
+
+.box-2,
+.box-4 {
+    float: right;
+}
+
+.box-1 {
+    background-image: url("../images/conference.png");
+    background-size: cover;
+}
+
+.box-2 {
+    background-image: url("../images/jjv.jpg");
+    background-size: cover;
+}
+
+.box-3 {
+    background-image: url("../images/cougar-cover.jpg");
+    background-size: cover;
+}
+
+.box-4 {
+    background-image: url("../images/awc.jpg");
+    background-size: cover;
+}
+
+/*Sticky Footer*/
+.footer {
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    padding:10px;
+    background-image: url("../images/black_paper.png");
+    border-top: 2px solid #fdd9d2;
+    bottom: 0;
+    z-index: 1;
+
+}
+
+/*Copyright*/
+#copyright {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8px;
+    color: white;
+}

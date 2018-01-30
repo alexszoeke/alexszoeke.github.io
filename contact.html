@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Portfolio</title>
+
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!--Main Heading Bar, Includes Logo and Navigation Links-->
+    <header>
+            <!--h1 Heading, Name Only-->
+             <h1><a>Alexandria Szoeke</a></h1>
+             <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="./index.html">About Me</a></li> |
+                    <li><a href="portfolio.html">Portfolio</a></li> |
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header> 
+    
+    <!--Container includes Contact Form and connect with me links-->
+    <div class="container">
+        
+      <!--Contact Me Section-->
+      <section id="contact-me">
+          <h2>Contact Me</h2>
+          <br>
+          
+          <!--Form-->
+          <form action="mailto: alex_szoeke@outlook.com" method="post" enctype="text/plain">
+
+            <!--Name-->
+            <label>Name</label>
+            <br>
+            <input tpye="text" name="fullname" placeholder="Jane Doe" class="form">
+            <br>
+            <br>
+
+            <!--Email-->
+            <label>Email</label>
+            <br>
+            <input type="text" name="email" placeholder="example@gmail.com" class="form">
+            <br>
+            <br>
+
+            <!--Message-->
+            <label>Message</label>
+            <br>
+            <input type="text" name="message" class="form" id="message">
+            <br>
+            <br>
+            <input type="submit" value="Send" id="button">
+          </form>
+           
+      </section>
+
+      <!--h2 Connect with me box-->
+      <section id="connect">
+          <h2>Connect with Me</h2>
+          <br>
+          <a href="https://github.com/alexszoeke" target="_blank"><img src="./assets/images/github.png" alt="GitHub" width="50px" class="icon"></a>  
+          <a href="https://www.linkedin.com/in/alexszoeke/" target="_blank"><img src="./assets/images/linkedin.png" alt="LinkedIn" width="50px" class="icon"></a>
+          <a href="https://stackoverflow.com/users/8985745/alex-szoeke?tab=profile" target="_blank"><img src="./assets/images/stackoverflow.png" alt="Stackoverflow" width="50px" class="icon"></a>
+
+      </section>
+  </div>
+
+
+    <!--Sticky Footer-->           
+    <div class="footer">
+
+      <!--Copyright-->
+      <section id="copyright">
+          <figure ="box">
+              &copy; Copyright 2018 Alex Szoeke
+          </figure>
+      </section>
+  </div>
+
+</body>
+
+</html>
