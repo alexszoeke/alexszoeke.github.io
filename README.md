@@ -1,2 +1,2 @@
-# alex_szoeke.github.io
-Alexandria Szoeke's Portfolio
+# Bootstrap-Portfolio
+Bootstrap Portfolio for homework assignment 2

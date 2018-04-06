@@ -1,89 +1,109 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Basic Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Portfolio</title>
 
-  <!--Stylesheets-->
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300|Sacramento" rel="stylesheet">
 </head>
 
 <body>
+
     <!--Main Heading Bar, Includes Logo and Navigation Links-->
-    <header>
-            <!--h1 Heading, Name Only-->
-             <h1><a>Alexandria Szoeke</a></h1>
-             <!--Navigation-->
-            <nav>
-                <ul>
-                    <li><a href="./index.html">About Me</a></li> |
-                    <li><a href="portfolio.html">Portfolio</a></li> |
-                    <li><a href="contact.html">Contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--Logo-->
+        <div class="container" id="navcontainer">
+            <nav class="navbar-brand justify-content-around"><h1>Alexandria Szoeke</h1></nav>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <!--Nav Links-->    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-            </nav>
-        </header> 
-    
-    <!--Container includes Contact Form and connect with me links-->
+            </div>
+        </div>
+    </nav>
+
+    <!--Container includes Contact Me Heading, Form, and connect with me links-->
     <div class="container">
-        
-      <!--Contact Me Section-->
-      <section id="contact-me">
-          <h2>Contact Me</h2>
-          <br>
-          
-          <!--Form-->
-          <form action="mailto: alex_szoeke@outlook.com" method="post" enctype="text/plain">
+        <div class="row">
+            <!--Column 1 includes Contact Me Section-->
+            <div class="col-md-8 col-xs-12">
+                <h2>Contact Me</h2>
 
-            <!--Name-->
-            <label>Name</label>
-            <br>
-            <input tpye="text" name="fullname" placeholder="Jane Doe" class="form">
-            <br>
-            <br>
+                <!--Form-->
+                <form action="mailto: alex_szoeke@outlook.com" method="post" enctype="text/plain">
+                  <div class="form-group">
+                <!--Name-->
+                    <label>Name</label>
+                    <input tpye="text" name="fullname" placeholder="Jane Doe" class="form-control">
+                  </div>
 
-            <!--Email-->
-            <label>Email</label>
-            <br>
-            <input type="text" name="email" placeholder="example@gmail.com" class="form">
-            <br>
-            <br>
+                <!--Email-->    
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="example@gmail.com" class="form-control">
+                  </div>
 
-            <!--Message-->
-            <label>Message</label>
-            <br>
-            <input type="text" name="message" class="form" id="message">
-            <br>
-            <br>
-            <input type="submit" value="Send" id="button">
-          </form>
-           
-      </section>
+                <!--Message-->  
+                  <div class="form-group">
+                    <label>Message</label>
+                    <input type="text" name="message" class="form-control" id="message">
+                <!--Submit-->
+                    <input type="submit" value="Send" id="button">
+                  </div>
+                </form>
+                <!--Form Ends-->
+            </div>
+            <!--Contact Me Section Ends-->
 
-      <!--h2 Connect with me box-->
-      <section id="connect">
-          <h2>Connect with Me</h2>
-          <br>
-          <a href="https://github.com/alexszoeke" target="_blank"><img src="./assets/images/github.png" alt="GitHub" width="50px" class="icon"></a>  
-          <a href="https://www.linkedin.com/in/alexszoeke/" target="_blank"><img src="./assets/images/linkedin.png" alt="LinkedIn" width="50px" class="icon"></a>
-          <a href="https://stackoverflow.com/users/8985745/alex-szoeke?tab=profile" target="_blank"><img src="./assets/images/stackoverflow.png" alt="Stackoverflow" width="50px" class="icon"></a>
+            <!--Column 2 includes connect with me card-->
+            <div class="col-md-4 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Connect with Me</h2>
+                        <a href="https://github.com/alexszoeke" target="_blank">
+                            <img src="./assets/images/github.png" alt="GitHub" width="50px" class="icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/alexszoeke/" target="_blank">
+                            <img src="./assets/images/linkedin.png" alt="LinkedIn" width="50px" class="icon">
+                        </a>
+                        <a href="https://stackoverflow.com/users/8985745/alex-szoeke?tab=profile" target="_blank">
+                            <img src="./assets/images/stackoverflow.png" alt="Stackoverflow" width="50px" class="icon"></a>
+                    </div>
+                </div>
+            </div>
 
-      </section>
-  </div>
 
+        </div>
 
-    <!--Sticky Footer-->           
-    <div class="footer">
+        <!--Footer-->
+        <div class="fixed-bottom">
+            <div class="copyright">
+                    © Copyright 2018 Alex Szoeke
+        </div>
+    </div>
 
-      <!--Copyright-->
-      <section id="copyright">
-          <figure ="box">
-              &copy; Copyright 2018 Alex Szoeke
-          </figure>
-      </section>
-  </div>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

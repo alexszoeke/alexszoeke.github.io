@@ -1,68 +1,196 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Basic Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Portfolio</title>
 
-  <!--Stylesheets-->
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300|Sacramento" rel="stylesheet">
 </head>
 
 <body>
+
     <!--Main Heading Bar, Includes Logo and Navigation Links-->
-    <header>
-            <!--h1 Heading, Name Only-->
-             <h1><a>Alexandria Szoeke</a></h1>
-             <!--Navigation-->
-            <nav>
-                <ul>
-                    <li><a href="./index.html">About Me</a></li> |
-                    <li><a href="portfolio.html">Portfolio</a></li> |
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--Logo-->
+        <div class="container" id="navcontainer">
+            <nav class="navbar-brand justify-content-around">
+                <h1>Alexandria Szoeke</h1>
             </nav>
-        </header>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!--Container includes Portfolio Section and connect with me links-->
+            <!--Nav Links-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Container includes Portfolio and connect with me links-->
     <div class="container">
-        
-      <!--Portfolio Section-->
-      <section id="portfolio">
-          <h2>Portfolio</h2>
+        <div class="row">
+            <!--Column 1 Includes Portfolio Heading and Samples-->
+            <div class="col-md-8 col-xs-12">
+                <h2>Portfolio</h2>
+                <!--2 rows nested in column 1, This is row 1-->
+                <div class="row samples-1">
+                    <!--2 Columns nested in this row, This is column 1-->
+                    <div class="col-md-6">
+                        <div class="thumbnail text-center">
+                            <a href="https://alexszoeke.github.io/Hangman-Game/" target="_blank">
+                                <!--I do not claim this image to be own-->
+                                <img src="./assets/images/img_8.jpg" alt="Rockets Mascot - Clutch" class="img-fluid">
+                                <div class="caption">
+                                    <h3>Hangman Game</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
-          <br>
-          <a href="https://appraisalmc.com/top-conferences-to-attend-in-2018/" target="_blank"><figure class="boxes box-1"><h3>Appraisal MC Article</h3></figure></a>
-          <a href="http://osx.soc.uh.edu/~aszoeke/" target="_blank"><figure class="boxes box-2"><h3>Outdated Website</h3></figure></a>
-          <a href="http://thedailycougar.com/2014/10/15/sexual-assault-focus-prevention-reaction/" target="_blank"><figure class="boxes box-3"><h3>The Daily Cougar Article</h3></figure></a>
-          <a href="https://www.facebook.com/pg/awcuh/photos/?tab=album&album_id=941480789271131" target="_blank"><figure class="boxes box-4"><h3>AWC President</h3></figure></a>
-           
-      </section>
+                    <!--Column 2-->
+                    <div class="col-md-6">
+                        <div class="thumbnail text-center">
+                            <a href="https://alexszoeke.github.io/week-4-game/" target="_blank">
+                                <img src="./assets/images/black-panther.jpg" alt="conference" class="img-fluid">
+                                <div class="caption">
+                                    <h3>Marvel RPG</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-      <!--h2 Connect with me box-->
-      <section id="connect">
-          <h2>Connect with Me</h2>
-          <br>
-          <a href="https://github.com/alexszoeke" target="_blank"><img src="./assets/images/github.png" alt="GitHub" width="50px" class="icon"></a>  
-          <a href="https://www.linkedin.com/in/alexszoeke/" target="_blank"><img src="./assets/images/linkedin.png" alt="LinkedIn" width="50px" class="icon"></a>
-          <a href="https://stackoverflow.com/users/8985745/alex-szoeke?tab=profile" target="_blank"><img src="./assets/images/stackoverflow.png" alt="Stackoverflow" width="50px" class="icon"></a>
+                <!--This is row 2-->
+                <div class="row">
+                    <!--This is column 1-->
+                    <div class="col-md-6">
+                        <div class="thumbnail text-center">
+                            <a href="https://alexszoeke.github.io/Psychic-Game/" target="_blank">
+                                <!--I do not claim this image to be own-->
+                                <img src="./assets/images/fortune-teller.jpg" alt="Fortune Teller" class="img-fluid">
+                                <div class="caption">
+                                    <h3>Psychic Game</h3>
+                                </div>
+                            </a>
+                        </div>
 
-      </section>
-  </div>
+                    </div>
+
+                    <!--This is column 2-->
+                    <div class="col-md-6">
+                        <div class="thumbnail text-center">
+                            <a href="https://alexszoeke.github.io/TriviaGame/" target="_blank">
+                                <img src="./assets/images/Taylorsnl.jpg" alt="Taylor Swift" class="img-fluid">
+                                <div class="caption">
+                                    <h3>Taylor Trivia</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--Row 3-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail text-center">
+                            <a href="https://alexszoeke.github.io/GifTastic/" target="_blank">
+                                <img src="./assets/images/dachshund_still.gif" alt="Dachshund Gif" class="img-fluid">
+                                <div class="caption">
+                                    <h3>GifTastic Doggos</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail text-center">
+                            <a href="https://alexszoeke.github.io/TrainSchedule/" target="_blank">
+                                <img src="./assets/images/train.jpg" alt="Train" class="img-fluid">
+                                <div class="caption">
+                                    <h3>Train Schedule</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Kickass Karaoke -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail text-center">
+                            <a href="https://shielded-gorge-35242.herokuapp.com/" target="_blank">
+                                <img src="./assets/images/karaoke.png" alt="Kickass Karaoke" class="img-fluid">
+                                <div class="caption">
+                                    <h3>Kickass Karaoke</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail text-center">
+                            <a href="https://github.com/alexszoeke/liri-node-app" target="_blank">
+                                <img src="./assets/images/liri.png" alt="Liri" class="img-fluid">
+                                <div class="caption">
+                                    <h3>Liri</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--This ends overall column 1-->
+
+            <!--This is the main column 2, includes connect with me card-->
+            <div class="col-md-4 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Connect with Me</h2>
+                        <a href="https://github.com/alexszoeke" target="_blank">
+                            <img src="./assets/images/github.png" alt="GitHub" width="50px" class="icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/alexszoeke/" target="_blank">
+                            <img src="./assets/images/linkedin.png" alt="LinkedIn" width="50px" class="icon">
+                        </a>
+                        <a href="https://stackoverflow.com/users/8985745/alex-szoeke?tab=profile" target="_blank">
+                            <img src="./assets/images/stackoverflow.png" alt="Stackoverflow" width="50px" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
-    <!--Sticky Footer-->           
-    <div class="footer">
+        </div>
 
-      <!--Copyright-->
-      <section id="copyright">
-          <figure ="box">
-              &copy; Copyright 2018 Alex Szoeke
-          </figure>
-      </section>
-  </div>
-
+        <!--Footer-->
+        <div class="fixed-bottom">
+            <div class="copyright">
+                © Copyright 2018 Alex Szoeke
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

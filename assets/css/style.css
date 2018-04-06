@@ -1,252 +1,199 @@
-/*Includes the background and body fonts*/
 body {
     background-image: url("../images/greyzz.png");
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    overflow: auto;
+} 
+
+
+/*Nav Bar*/
+.navbar {
+    background-image: url("../images/black_paper.png");
+    border-bottom: 2px solid #fdd9d2;
+    padding: 0px;
+    
 }
 
-/*About me and connect with me box*/
-.container {
-    width: 960px;
-    margin: 80px auto;
-    padding: 20px;
+/*Nav Link*/
+
+.nav-link {
+    border: 1px solid #fdd9d2;
+    margin: 2px;
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: #fdd9d2;
+    color: black;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../images/menu.png");
+}
+
+/*Name-Logo*/
+.navbar-brand {
+    font-family: 'Sacramento', cursive;
+    background-color: #fdd9d2;
+    color: black;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 15px 25px 0px 25px;
+}
+
+/*Container*/
+
+body > .container {
+    margin-top: 30px;
+    overflow: auto;
+    margin-bottom: 75px;
+}
+
+#navcontainer {
+    overflow: hidden;
+}
+
+#bodycontainer {
     overflow: auto;
 }
 
-/*Includes name and nav links*/
-header {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background-image: url("../images/black_paper.png");
-    border-bottom: 2px solid #fdd9d2;
-}
-
-header > h1{
-    float:left;
-    display:inline-block;
-    padding:32px;
-  }
-
-/*Nav links only*/
-nav {
-    float: right;
-    width: 400px;
-    padding: 15px;
-    margin: 10px;
-    margin-right: 200px;
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-ul {
-    color: white;
-}
-
-li{
-    display:inline-block;
-  }
-
-  /*Links in the nav bar*/
-a {
-    text-decoration: underline;
-    color: #fdd9d2;
-}
-
-/*Hover Change*/
-a:hover {
-    color: white;
-}
-
-
-/*H1 Tag- Name Only*/
-h1 {
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 25px 5px; 
-    width: 300px;
-    margin-left: 277px;
-    font-weight: bold;
-    background-color: #fdd9d2;
-    color: black;
-}
-
-h1 > a {
-    color: black;
-    text-decoration: none;
-}
-
-/*H2 Tag - "About Me/Portfolio/Contant Me" & "Connect with Me"*/
 h2 {
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 10px;
+    padding-top: 20px;
     border-bottom: 2px solid #fdd9d2;
-    color: #404040;
-    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
 }
 
-/*Portfolio Link Labels*/
-h3 {
-    font-size: 18px;
-    vertical-align: middle;
-    background-color: #fdd9d2;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 145px;
-    padding: 10px 5px;
-    color: black;
-    font-weight: bold;
+/*Left Side Content (About me, portfolio, contact me form)*/
+.row {
+    margin: 20px;
+    display: flex;
+    margin: 0;
 }
 
-/*Connect with Me box*/
-#connect {
-    float: right;
+.col-md-8 {
     background-color: white;
-    width: 270px;
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
+    border-radius: .25rem;
 }
 
-/*Icon photos (e.g. Github, LinkedIn, StackOverflow)*/
+/*Connect with me card*/
+
+.card {
+    text-align: center;
+    margin: 15px;
+    border: 0px;
+}
+
 .icon {
     margin: 10px;
 }
+/*End Card*/
+/*End Container*/
 
-/*About me section only*/
-#about-me {
-    float: left;
-    width: 650px;
-    background-color: white;
-    padding: 5px;
-    margin: 5px;
-    line-height: 1.6;
-}
 
-/*Graduation Headshot*/
+/*About Me*/
 #gradphoto {
     float: left;
-    margin: 10px;
+    margin-right: 15px;
 }
 
-/*Punny Joke*/
-#quote {
-    color: #404040;
-    font-size: 20px;
+p {
     font-weight: bold;
     text-align: center;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+}
+/*End About Me*/
+
+/*Form*/
+.form-control {
+    border: 2px solid #dac2a8;
 }
 
-/*Contact me section only*/
-#contact-me {
-    float: left;
-    width: 650px;
-    background-color: white;
-    padding: 5px;
-    margin: 5px;
-    line-height: 1.6;
-}
-
-/*Form Properties*/
-.form {
-    width: 600px;
-    border: solid #dac2a8;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/*Labels*/
 label {
-    color: #404040;
-    font-size: 16px;
+    margin: 5px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
 }
 
-/*Message Box*/
+input {
+    margin: 5px;
+}
+
 #message {
     height: 150px;
 }
 
-/*Submit Button*/
 #button {
     background-color: #404040;
     color: white;
-    border: none;
+    border-radius: 5px;
     width: 100px;
     height: 50px;
     font-size: 25px;
     text-align: center;
+    border: none;
+}
+/*End Form*/
+
+
+/*Portfolio*/
+
+.thumbnail {
+    position: relative;
+    border: 2px solid black;
+    box-shadow: 3px 3px 1px black;
+    margin-bottom: 15px;
+    width: 285px;
+    background-color: black;
 }
 
-/*Portfolio section only*/
-#portfolio {
-    float: left;
-    width: 650px;
-    background-color: white;
-    padding: 5px;
-    margin: 5px;
-    line-height: 1.6;
-}
-
-/*Boxes Listed Below*/
-.boxes {
-    border: solid black;
-    width: 250px;
-    height: 200px;
-    margin: 30px;
-    text-align: center;
-}
-
-.box-1,
-.box-3 {
-    float: left;
-}
-
-.box-2,
-.box-4 {
-    float: right;
-}
-
-.box-1 {
-    background-image: url("../images/conference.png");
-    background-size: cover;
-}
-
-.box-2 {
-    background-image: url("../images/jjv.jpg");
-    background-size: cover;
-}
-
-.box-3 {
-    background-image: url("../images/cougar-cover.jpg");
-    background-size: cover;
-}
-
-.box-4 {
-    background-image: url("../images/awc.jpg");
-    background-size: cover;
-}
-
-/*Sticky Footer*/
-.footer {
-    position: fixed;
-    height: 30px;
+.caption {
+    position: absolute;
+    top: 75%;
+    left: 0;
     width: 100%;
-    padding:10px;
-    background-image: url("../images/black_paper.png");
-    border-top: 2px solid #fdd9d2;
-    bottom: 0;
-    z-index: 1;
-
 }
 
-/*Copyright*/
-#copyright {
-    font-size: 16px;
+.img-fluid {
+    height: 200px;
+}
+
+.samples-1 {
+    margin-top: 20px;
+}
+
+h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bolder;
+    background: pink;
+    color: black;
+    font-size: 30px;
+    padding: 5px 0px;
+}
+/*End Portfolio*/
+
+/*Footer*/
+.fixed-bottom {
     text-align: center;
-    margin-top: 8px;
+    background-image: url("../images/black_paper.png");
     color: white;
+    height: 50px;
+    padding: 15px;
+    font-size: 16px;
+    border-top: 2px solid #fdd9d2;
+}
+
+@media screen and (max-width:980px){
+    h1 {
+        margin: auto;
+    }
+
+    .navbar {
+        width: 100%;
+    }
 }
