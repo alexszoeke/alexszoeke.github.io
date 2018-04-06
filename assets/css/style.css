@@ -128,15 +128,37 @@ input {
     height: 150px;
 }
 
-#button {
-    background-color: #404040;
-    color: white;
-    border-radius: 5px;
-    width: 100px;
-    height: 50px;
-    font-size: 25px;
-    text-align: center;
-    border: none;
+/* button */
+.btn-primary {
+    color: pink;
+    background-color:black;
+    border-color: #dac2a8;
+}
+
+.btn-primary:hover {
+    color: black;
+    background-color: #dac2a8;
+    border-color:pink;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: pink;
+    background-color: black;
+    border-color: #dac2a8;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem pink;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem black;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active {
+    color: black;
+    background-color: #dac2a8;
+    border-color: pink;
 }
 /*End Form*/
 
